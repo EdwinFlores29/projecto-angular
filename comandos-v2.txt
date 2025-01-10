@@ -1,0 +1,67 @@
+CREATE TABLE `buy-and-sell`.`listings` (
+  id VARCHAR (100) PRIMARY KEY NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  price DECIMAL(10, 2) NOT NULL,
+  user_id VARCHAR(255) NOT NULL,
+  views INT NOT NULL
+);
+drop table listings
+INSERT INTO listings (id, name, description, price, user_id, views)
+VALUES ('123', 'Guitar', 'My old guitar, play very well', 200.00, '12345', 0),
+	   ('124', 'Old Boat', 'A very old boat. Bargain price', 700.00, '12345', 0),
+       ('125', 'Computer', 'Fromo de 1990s, a classic !', 80.00, '99999', 0),
+	   ('126', 'Basketball hoop', 'Good condition, free delivery', 100.00, '44444', 0);
+SELECT * FROM listings
+
+id project my-project-angular
+my-project-angular-d74d3
+Developer-Angular
+angular-a946d
+proyecto-angular-final-4241c
+proyecto-angular-final-4241c
+
+DB_HOST=104.197.25.152
+DB_USER=root
+DB_PASS=dariohakuna2#
+DB_NAME=buy-and-sell
+DB_PORT=3306
+
+[https://developer-angular.uc.r.appspot.com]
+DB_USER=root
+DB_PASS=dariohakuna2#
+DB_NAME=buy-and-sell
+DB_HOST=104.197.25.152
+
+DB_USER=root
+DB_PASS=root
+DB_NAME=buy-and-sell
+DB_HOST=localhost
+
+DB_USER=root
+DB_PASS=dariohakuna2#
+DB_NAME=buy-and-sell
+DB_HOST=104.197.25.152
+DB_SOCKET= /cloudsql/developer-angular:us-central1:devoper-angular
+
+DB_USER=root
+DB_PASS=dariohakuna2#
+DB_NAME=buy-and-sell
+DB_HOST=104.197.25.152
+INSTANCE_HOST=127.0.0.1
+DB_PORT=3306
+GOOGLE_APPLICATION_CREDENTIALS=key.json
+
+
+host: '104.197.25.152',
+            user: 'root',
+            password: 'dariohakuna2#',
+            database: 'buy-and-sell',
+            port: '3306',
+
+DB_USER=root
+DB_PASS=dariohakuna2#
+DB_NAME=buy-and-sell
+DB_HOST=104.197.25.152
+INSTANCE_HOST=127.0.0.1
+DB_PORT=3306

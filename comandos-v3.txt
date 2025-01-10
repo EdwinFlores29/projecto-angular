@@ -1,0 +1,22 @@
+runtime: nodejs18
+env: standard
+automatic_scaling:
+  min_num_instances: 1 # Mínimo número de instancias
+  max_num_instances: 3 # Máximo número de instancias
+  target_cpu_utilization: 0.6 # Uso objetivo de la CPU para el escalado automático
+handlers:
+  - url: /api/.* # Rutas que maneja el backend de Node.js (API)
+    script: auto
+  - url: /.* # Rutas que maneja el frontend de Angular
+    static_files: dist/buy-and-sell/index.html # Archivo principal de Angular
+    upload: dist/buy-and-sell/(.*) # Subir todos los archivos de Angular
+    secure: always # Forzar HTTPS (recomendado)
+beta_settings:
+  cloud_sql_instances: angular-a946d:us-central1:angular
+env_variables:
+  DB_HOST: 35.225.101.127
+  DB_USER: root
+  DB_PASS: dariohakuna2#
+  DB_NAME: buy-and-sell
+  DB_PORT: 3306
+  DB_SOCKET: /cloudsql/angular-a946d:us-central1:angular
