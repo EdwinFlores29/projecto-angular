@@ -1,0 +1,11 @@
+runtime: nodejs20
+env: standard
+beta_settings:
+  cloud_sql_instances: proyecto-angular-final-4241c:us-central1:proyecto-angular
+env_variables:
+  DB_HOST: 34.30.232.135
+  DB_USER: root
+  DB_PASS: dariohakuna2#
+  DB_NAME: buy-and-sell
+  DB_PORT: 3306
+  DB_SOCKET: /cloudsql/proyecto-angular-final-4241c:us-central1:proyecto-angular

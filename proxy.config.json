@@ -1,0 +1,8 @@
+{
+    "/api/*": {
+        "target": "https://proyecto-angular-final-4241c.uc.r.appspot.com",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+}
